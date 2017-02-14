@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
   	<title>NotesApp</title>
-  	<meta name="description" content="The better way of choosing your annuity">
+  	<meta name="description" content="Allowing you to quickly note things down on the go">
     <link rel="stylesheet" href="css/note.css">
     <script src="js/note.js"></script>
     <script src="js/list.js"></script>
@@ -11,20 +11,23 @@
 
   <body>
     <header>
-      <div id = "home">
+      <div id="home">
         <h1>Our notes app</h1>
       </div>
     </header>
 
-    <button id="show-new-note-button">Write a new note</button>
-    <br>
-    <form id="submit-new-note-form" style="display: none;">
-      <label>
-        Enter your note:<br>
-        <textarea id="note-text" name="note-text" cols="50" rows="5"></textarea>
-      </label><br>
-      <button id="save-new-note">Save your note</button>
-    </form>
+
+    <section class="notepad">
+        <button id="show-new-note-button">Write a new note</button>
+        <br>
+        <form id="submit-new-note-form" style="display: none;">
+          <label>
+            Enter your note:<br>
+            <textarea id="note-text" name="note-text" rows="10" cols="100" placeholder="Enter your note here"></textarea>
+          </label><br>
+          <button id="save-new-note">Save your note</button>
+        </form>
+     </section>
 
 	   <section class="list" id = "list">
 			  <div class ="container" id="previews"></div>
@@ -33,4 +36,10 @@
 
      <script src="js/control.js"></script>
    </body>
+
+   <footer>
+     <div id="footer">
+       <p>Copyright &copy; 2017 Katerina Loschinina, Konrad Schlatte, Frankie Shaw and Kat Hicks.</p>
+     </div>
+   </footer>
 </html>
