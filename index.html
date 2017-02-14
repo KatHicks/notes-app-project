@@ -6,6 +6,7 @@
   	<meta name="description" content="The better way of choosing your annuity">
     <link rel="stylesheet" href="css/note.css">
     <script src="js/note.js"></script>
+    <script src="js/list.js"></script>
   </head>
 
   <body>
@@ -20,13 +21,13 @@
     <form id="submit-new-note-form" style="display: none;">
       <label>
         Enter your note:<br>
-        <textarea name="note-text" cols="50" rows="5"></textarea>
+        <textarea id="note-text" name="note-text" cols="50" rows="5"></textarea>
       </label><br>
       <button id="save-new-note">Save your note</button>
     </form>
 
 	   <section class="list" id = "list">
-			    <div class ="container"></div>
+			  <div class ="container" id="previews"></div>
      </section>
 
 
