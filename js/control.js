@@ -11,7 +11,6 @@ var control = (function () {
     newNoteButton.addEventListener("click", function() {
       submitNewNoteForm.style.display = "block";
       newNoteButton.style.display = "none";
-      event.preventDefault();
     });
     saveNewNote.addEventListener("click", function() {
       var note = new Note(noteText.value);
