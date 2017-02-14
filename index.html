@@ -13,18 +13,14 @@
     <header>
       <div id="home">
         <h1>Our notes app</h1>
+        <button id="show-new-note-button">Write a new note</button>
       </div>
     </header>
 
 
     <section class="notepad">
-        <button id="show-new-note-button">Write a new note</button>
-        <br>
         <form id="submit-new-note-form" style="display: none;">
-          <label>
-            Enter your note:<br>
-            <textarea id="note-text" name="note-text" rows="10" cols="100" placeholder="Enter your note here"></textarea>
-          </label><br>
+          <textarea id="note-text" name="note-text" rows="10" cols="100" placeholder="Enter your note here"></textarea>
           <button id="save-new-note">Save your note</button>
         </form>
      </section>

@@ -8,9 +8,14 @@ footer {
   text-align: center;
   font-size: 10px;
   font-weight: lighter;
+  position: fixed;
+  z-index: 1;
+	bottom: 0;
+  width: 100%;
+  background-color: #FFFFFF;
 }
 
-h1 {
+#home {
   color: #ffffff;
   padding: 15px 0px;
   text-align: center;
@@ -24,7 +29,7 @@ h1 {
 textarea {
   display: block;
   resize: none;
-  margin: 10px auto;
+  margin: 35px auto;
   border-radius: 15px;
   padding: 15px;
   border-color: #959595;
@@ -40,13 +45,21 @@ textarea:focus {
 
 button {
   display: block;
-  margin: 10px auto;
+  margin: 30px auto;
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
   padding: 10px;
   border-radius: 10px;
   background-color: #3B516E;
   color: #FFFFFF;
   border: none;
+}
+
+#show-new-note-button {
+  background-color: #FFFFFF;
+  color: #3B516E;
+  float: right;
+  margin-top: -60px;
+  margin-right: 20px;
 }
 
 button:focus {
@@ -58,11 +71,10 @@ button:focus {
 
 .notepad {
   background-color: #FFFFFF;
-  padding: 20px;
 }
 
 .list {
   background-color: #c3cede;
   padding: 20px;
-  height: 40vh;
+  height: 100vh;
 }
