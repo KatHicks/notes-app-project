@@ -26,8 +26,8 @@ var control = (function () {
   var refreshList = function () {
     previews.innerHTML = "";
     for (var i = 0; i < notesList.getNotes().length; i++) {
-      previews.insertAdjacentHTML("beforeend", ("<li>"+((notesList.getNotes())[i]).getPreview())+"</li>")
-    };
+      previews.insertAdjacentHTML("beforeend", ("<li>"+((notesList.getNotes())[i]).getPreview())+"</li>");
+    }
   };
 
   return {
