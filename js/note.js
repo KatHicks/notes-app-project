@@ -1,5 +1,6 @@
 var Note = function(text) {
   this._text = text;
+  this._preview = text.slice(0,20);
 };
 
 Note.prototype.getText = function () {
@@ -7,5 +8,5 @@ Note.prototype.getText = function () {
 };
 
 Note.prototype.getPreview = function () {
-  return (this._text).slice(0,20);
+  return this._preview
 };

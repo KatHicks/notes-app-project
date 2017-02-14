@@ -6,7 +6,7 @@
   	<meta name="description" content="Allowing you to quickly note things down on the go">
     <link rel="stylesheet" href="css/note.css">
     <script src="js/note.js"></script>
-    <script src="js/control.js"></script>
+    <script src="js/list.js"></script>
   </head>
 
   <body>
@@ -16,15 +16,25 @@
       </div>
     </header>
 
-    <section class="notepad">
-      <textarea rows="10" cols="100" placeholder="Enter your note here"></textarea>
-      <button>Submit</button>
-    </section>
 
-	   <section class="list" id="list">
-			    <div class ="container">
-			    </div>
+    <section class="notepad">
+        <button id="show-new-note-button">Write a new note</button>
+        <br>
+        <form id="submit-new-note-form" style="display: none;">
+          <label>
+            Enter your note:<br>
+            <textarea id="note-text" name="note-text" rows="10" cols="100" placeholder="Enter your note here"></textarea>
+          </label><br>
+          <button id="save-new-note">Save your note</button>
+        </form>
      </section>
+
+	   <section class="list" id = "list">
+			  <div class ="container" id="previews"></div>
+     </section>
+
+
+     <script src="js/control.js"></script>
    </body>
 
    <footer>
