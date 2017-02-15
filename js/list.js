@@ -7,5 +7,5 @@ List.prototype.getNotes = function () {
 };
 
 List.prototype.addNotes = function (note) {
-  this._notes.push(note)
-}
+  this._notes.push(note);
+};

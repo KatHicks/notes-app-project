@@ -8,5 +8,5 @@ Note.prototype.getText = function () {
 };
 
 Note.prototype.getPreview = function () {
-  return this._preview
+  return this._preview;
 };
