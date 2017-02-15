@@ -1,19 +1,30 @@
 # notesApp
-Notes App Project Stream 
-Notes app user stories
+Notes App Group Project Stream<br>
+![Screenshot](http://imgur.com/a/bDW8x)
+### Notes app user stories
 
-Notes app home page mockup Notes app note page mockup
-
+```
 As a programmer
-I can see a list of my notes, where each note is abbreviated to the first 20 characters
 So I can find the one I want
+I can see a list of my notes, where each note is abbreviated to the first 20 characters
+
 
 As a programmer
-I can create a new note
 So I can record something I need to remember
+I can create a new note
 
 As a programmer
-I can see the full text of an individual note on its own page
 So I can see all the information in the note
-
-(NB: notes do not need to be permanently stored. If the user refreshes their web page, they'll lose their notes, and that's fine.)
+I can see the full text of an individual note on its own page
+```
+(NB: notes are not permanently stored. If the user refreshes their web page, they'll lose their notes, and that's fine.)
+### Installing
+$ git clone https://github.com/schlattk/notesApp.git
+### Testing
+$ open testRunner.html <br>
+Tests are stored in '/tests/unit', use test-library.js and are run in testRunner.html<br>
+### Running
+$ open index.html (for a file in browser)<br>
+or<br>
+$ node node_modules/http-server/bin/http-server (for a local server)<br>
+then go to http://localhost:8080/
