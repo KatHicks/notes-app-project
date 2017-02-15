@@ -1,16 +1,7 @@
-function testListHasNotes() {
-  var list1 = new List();
+var list1 = new List();
 
-  if (Array.isArray(list1.getNotes())) {
-    if (list1.getNotes().length === 0) {
-      console.info("testListHasNotes passed");
-    } else {
-      throw new Error("testListHasEmptyNotes failed");
-    }
-  } else {
-    throw new Error("testListHasNotes failed");
-  }
-}
 
 //run these tests:
-testListHasNotes();
+testExists(list1, 'list1')
+testTypeOfObject(list1.getNotes(), 'array', 'list1.getNotes')
+testArrayLength(list1.getNotes(), 0, 'list1.getNotes()')

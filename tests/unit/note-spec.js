@@ -1,30 +1,9 @@
-function testNoteHasText() {
-  var testText = "this is my first note";
-  var note1 = new Note(testText);
-
-  if (note1.getText() !== testText) {
-    throw new Error("testNoteHasText failed");
-  } else {
-    console.info("testNoteHasText passed");
-  }
-}
-
-
-function testNoteHasPreview() {
-  var testText = "this is my first note";
-  var note1 = new Note(testText);
-
-  if (note1.getPreview() !== "this is my first not") {
-    throw new Error("testNoteHasPreview failed");
-  } else {
-    console.info("testNoteHasPreview passed");
-  }
-}
-
-
-
+var testText = "this is my first note";
+var testPreview = "this is my first not";
+var note1 = new Note(testText);
 
 
 // run these tests:
-testNoteHasText();
-testNoteHasPreview();
+testExists(note1, 'note1')
+testResult(note1.getText(), testText, 'note1.getText()');
+testResult(note1.getPreview(), testText, 'note1.getPreview()');
