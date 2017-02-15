@@ -7,10 +7,6 @@ var control = (function () {
 
   var notesList = new List();
 
-  var note0;
-  var noteText0;
-  var status0 = 0;
-
   var init = function () {
     newNoteButton.addEventListener("click", function() {
       submitNewNoteForm.style.display = "block";
