@@ -7,7 +7,7 @@ function testNoteHasText() {
   } else {
     console.info("testNoteHasText passed");
   }
-};
+}
 
 
 function testNoteHasPreview() {
@@ -19,7 +19,7 @@ function testNoteHasPreview() {
   } else {
     console.info("testNoteHasPreview passed");
   }
-};
+}
 
 
 
