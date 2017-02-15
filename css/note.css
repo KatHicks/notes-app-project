@@ -76,8 +76,28 @@ button:focus {
 .list {
   background-color: #c3cede;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+li {
+  list-style-type: square;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .expanded-note {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  border-color: #3B516E;
+  box-shadow: 0 0 10px #3B516E;
+  font-style: italic;
+  margin: 20px auto 20px auto;
+  color: #322b5d;
+  background-color: lightblue;
+  padding: 20px;
 }
