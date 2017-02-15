@@ -7,6 +7,10 @@ var control = (function () {
 
   var notesList = new List();
 
+  var note0;
+  var noteText0;
+  var status0 = 0;
+
   var init = function () {
     newNoteButton.addEventListener("click", function() {
       submitNewNoteForm.style.display = "block";
@@ -20,12 +24,26 @@ var control = (function () {
       newNoteButton.style.display = "block";
       event.preventDefault();
     });
+    list.addEventListener('click', insert, false);
   };
+
+  function insert(e) {
+    var a = e.target.getAttribute("id");
+    var element = document.getElementById(a);
+    var expandedNote = document.getElementById("note-text"+a);
+    if (expandedNote.style.display === "none") {
+      expandedNote.style.display = "block";
+    }
+    else if (expandedNote.style.display === "block") {
+      expandedNote.style.display = "none";
+    }
+  }
 
   var refreshList = function () {
     previews.innerHTML = "";
     for (var i = 0; i < notesList.getNotes().length; i++) {
-      previews.insertAdjacentHTML("beforeend", ("<li>"+((notesList.getNotes())[i]).getPreview())+"</li>");
+      previews.insertAdjacentHTML("beforeend", "<li id="+i+">"+((notesList.getNotes())[i]).getPreview()+"</li>");
+      previews.insertAdjacentHTML("beforeend", "<div class='expanded-note' style='display: none;' id='note-text"+i+"''>"+((notesList.getNotes())[i]).getText()+"</div>");
     }
   };
 
