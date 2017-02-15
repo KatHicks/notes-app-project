@@ -1,6 +1,6 @@
 # notesApp
 Notes App Group Project Stream<br>
-![Screenshot](http://imgur.com/a/bDW8x)
+![Screenshot](http://i.imgur.com/tBLs5fs.png)
 ### Notes app user stories
 
 ```
