@@ -23,6 +23,7 @@ var control = (function () {
       submitNewNoteForm.style.display = "none";
       newNoteButton.style.display = "block";
       event.preventDefault();
+      noteText.value = "";
     });
     list.addEventListener('click', insert, false);
   };
