@@ -6,4 +6,4 @@ var note1 = new Note(testText);
 // run these tests:
 testExists(note1, 'note1')
 testResult(note1.getText(), testText, 'note1.getText()');
-testResult(note1.getPreview(), testText, 'note1.getPreview()');
+testResult(note1.getPreview(), testPreview, 'note1.getPreview()');
