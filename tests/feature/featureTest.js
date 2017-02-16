@@ -1,5 +1,4 @@
-    //
-    //
+    // 
     // var newNoteButton = document.getElementById("show-new-note-button");
     // var saveNewNote = document.getElementById("save-new-note");
     // var noteText = document.getElementById("note-text");

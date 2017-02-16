@@ -21,5 +21,8 @@
   "homepage": "https://github.com/schlattk/notesApp#readme",
   "dependencies": {
     "http-server": "^0.9.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
   }
 }
