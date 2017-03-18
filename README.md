@@ -1,5 +1,9 @@
-# notesApp
-Notes App Group Project Stream<br>
+# Notes app
+### Makers Academy Week No. 7
+**Project Track**
+
+[![Code Climate](https://codeclimate.com/github/KatHicks/notes-app-project/badges/gpa.svg)](https://codeclimate.com/github/KatHicks/notes-app-project)
+
 ![Screenshot](http://i.imgur.com/tBLs5fs.png)
 ### Notes app user stories
 
